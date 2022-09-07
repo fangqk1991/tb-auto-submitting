@@ -1,0 +1,14 @@
+{
+  "name": "Auto Submitting",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://buy.tmall.com/order/confirm_order.htm*",
+        "https://buy.taobao.com/auction/order/confirm_order.htm*"
+      ],
+      "js": ["auto-submit.js"]
+    }
+  ]
+}
