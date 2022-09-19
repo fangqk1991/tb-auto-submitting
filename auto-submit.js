@@ -11,7 +11,7 @@ const main = async () => {
 
   const btn = document.querySelector('.go-btn')
   if (btn) {
-    await sleep(200)
+    await sleep(50 * Math.floor(Math.random() * 10))
     btn.click()
   } else {
     while (Date.now() < targetTs) {
