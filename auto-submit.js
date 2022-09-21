@@ -14,6 +14,9 @@ const main = async () => {
     await sleep(50 * Math.floor(Math.random() * 10))
     btn.click()
   } else {
+    if (Date.now() > targetTs + 20 * 1000) {
+      return
+    }
     while (Date.now() < targetTs) {
       console.info(`sleep.`)
       await sleep(100)
